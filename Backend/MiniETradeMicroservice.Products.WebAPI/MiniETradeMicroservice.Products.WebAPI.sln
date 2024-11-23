@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniETradeMicroservice.Products.WebAPI", "MiniETradeMicroservice.Products.WebAPI.csproj", "{8DB81768-7F87-4F24-BDF2-9FA7D6A86C17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB81768-7F87-4F24-BDF2-9FA7D6A86C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB81768-7F87-4F24-BDF2-9FA7D6A86C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB81768-7F87-4F24-BDF2-9FA7D6A86C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB81768-7F87-4F24-BDF2-9FA7D6A86C17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DD71D53-928D-459C-A418-F6184F03D448}
+	EndGlobalSection
+EndGlobal
