@@ -52,7 +52,7 @@ namespace MiniETradeMicroservice.ShoppingCarts.WebAPI.Controllers
                 Status = true
             });
         }
-        [HttpGet("create")]
+        [HttpPost("create")]
         public async Task<IActionResult> Create(CreateShoppingCartDto createShoppingCartDto)
         {
             using var context = new ApplicationDbContext();
