@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "b0ec3fb2-f9ff-48e1-8ae6-e9d57864106d",
+		"name": "MiniETradeMicroservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14726792"
+	},
+	"item": [
+		{
+			"name": "GT/Users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fatih\",\r\n    \"password\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/Users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/Users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fatih\",\r\n    \"password\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/Users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/OrdersGetAlll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI5Yjg0ZTUzNS0xYTRlLTRiMWUtODViYy03ZjYyZjAxZjIzZTkiLCJVc2VyTmFtZSI6ImZhdGloIiwibmJmIjoxNzMyMzcwNTQ5LCJleHAiOjE3MzIzNzIzNDksImlzcyI6IkZhdGloIEJheWN1IiwiYXVkIjoid3d3LmZhdGloYmF5Y3UuY29tIn0.QUng4fne2dbuvvWAqwTU8T3DndMCVENRPWKmb168qWxcF1vc6RMWLOFWrLNiGdSYYiRQNF03bXB1GBnT8lIskg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{gatewayUrl}}/Orders/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/OrdersCreate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI5Yjg0ZTUzNS0xYTRlLTRiMWUtODViYy03ZjYyZjAxZjIzZTkiLCJVc2VyTmFtZSI6ImZhdGloIiwibmJmIjoxNzMyMzcwNTQ5LCJleHAiOjE3MzIzNzIzNDksImlzcyI6IkZhdGloIEJheWN1IiwiYXVkIjoid3d3LmZhdGloYmF5Y3UuY29tIn0.QUng4fne2dbuvvWAqwTU8T3DndMCVENRPWKmb168qWxcF1vc6RMWLOFWrLNiGdSYYiRQNF03bXB1GBnT8lIskg"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"productId\": \"1bf88ebf-d420-49e8-9e44-00b5c92e3688\",\r\n        \"quantity\": 10,\r\n        \"price\": 20\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/Orders/create"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/Products/getall",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJjMjMzYmQ1Mi1hYzgyLTRmM2UtOTQxMy01NjQ2ZjM3NDczZjUiLCJVc2VyTmFtZSI6ImZhdGloIiwibmJmIjoxNzMyNDU4OTQyLCJleHAiOjE3MzI1MTg4ODIsImlzcyI6IkZhdGloIEJheWN1IiwiYXVkIjoid3d3LmZhdGloYmF5Y3UuY29tIn0.DoKejZa0xHSXEqF2A13U7aJZjJ6XMhEn7eqtfY1z5fT9uN8gyTtGL7ClC_CaoFU39JjQC89KI-RU_nR1oMixxw"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{gatewayUrl}}/Products/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/Products/seedData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI5Yjg0ZTUzNS0xYTRlLTRiMWUtODViYy03ZjYyZjAxZjIzZTkiLCJVc2VyTmFtZSI6ImZhdGloIiwibmJmIjoxNzMyMzcwNTQ5LCJleHAiOjE3MzIzNzIzNDksImlzcyI6IkZhdGloIEJheWN1IiwiYXVkIjoid3d3LmZhdGloYmF5Y3UuY29tIn0.QUng4fne2dbuvvWAqwTU8T3DndMCVENRPWKmb168qWxcF1vc6RMWLOFWrLNiGdSYYiRQNF03bXB1GBnT8lIskg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{gatewayUrl}}/Products/seedData?productCount=10",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"Products",
+						"seedData"
+					],
+					"query": [
+						{
+							"key": "productCount",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GT/Products/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": 21,\r\n    \"stock\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/Products/create"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/Products/change-product-stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": 21,\r\n    \"stock\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/Products/change-product-stock"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/ShoppingCarts/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{gatewayUrl}}/ShoppingCarts/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/ShoppingCarts/create",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"1bf88ebf-d420-49e8-9e44-00b5c92e3688\",\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{gatewayUrl}}/ShoppingCarts/create"
+			},
+			"response": []
+		},
+		{
+			"name": "GT/ShoppingCarts/create-order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{gatewayUrl}}/ShoppingCarts/create-order"
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersGetAlll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{ordersUrl}}/Orders/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "OrdersCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"productId\": \"1bf88ebf-d420-49e8-9e44-00b5c92e3688\",\r\n        \"quantity\": 10,\r\n        \"price\": 20\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{ordersUrl}}/Orders/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Products/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{productsUrl}}/Products/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "Products/seedData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productsUrl}}/Products/seedData?productCount=10",
+					"host": [
+						"{{productsUrl}}"
+					],
+					"path": [
+						"Products",
+						"seedData"
+					],
+					"query": [
+						{
+							"key": "productCount",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"price\": 21,\r\n    \"stock\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{productsUrl}}/Products/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Products/change-product-stock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"ProductId\": \"\",\r\n        \"Quantity\": \"\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{productsUrl}}/Products/change-product-stock"
+			},
+			"response": []
+		},
+		{
+			"name": "ShoppingCarts/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{shoppingCartsApi}}/ShoppingCarts/getall"
+			},
+			"response": []
+		},
+		{
+			"name": "ShoppingCarts/create",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"1bf88ebf-d420-49e8-9e44-00b5c92e3688\",\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{shoppingCartsApi}}/ShoppingCarts/create"
+			},
+			"response": []
+		},
+		{
+			"name": "ShoppingCarts/create-order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{shoppingCartsApi}}/ShoppingCarts/create-order"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiI2OTNlNzIxZC0zZmZiLTQ0ZTgtYmJhNi1kMjBjZmUzOTcyODciLCJVc2VyTmFtZSI6ImZhdGloIiwibmJmIjoxNzMyMzcxNDg3LCJleHAiOjE3MzI0MzE0MjcsImlzcyI6IkZhdGloIEJheWN1IiwiYXVkIjoid3d3LmZhdGloYmF5Y3UuY29tIn0.lm0X3pEcMjWBwiOve9dz24R0ie760WQL4O5JoGew4rP7r-ub6DrV5Jz1X9UkB6ynzIrrRAb2h3HBAcTI2JAzNA"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "gatewayUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "ordersUrl",
+			"value": "http://localhost:5003",
+			"type": "string"
+		},
+		{
+			"key": "productsUrl",
+			"value": "http://localhost:5001",
+			"type": "string"
+		},
+		{
+			"key": "shoppingCartsApi",
+			"value": "http://localhost:5002",
+			"type": "string"
+		}
+	]
+}
